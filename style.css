@@ -1,0 +1,72 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Body Background */
+  body {
+    background-color: yellowgreen;
+  }
+  
+  /* Main Container */
+  .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Drop Styles - Adjusted size */
+  .drop {
+    background-color: #00FFFC;
+    height: 10rem; /* Increased size */
+    width: 10rem; /* Increased size */
+    border-radius: 10%;
+    border: 6px solid rgba(0, 0, 0, 0.6);
+    position: absolute;
+  
+    /* Smooth Animations with Transitions */
+    animation: animate 5s ease-in-out infinite;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* Keyframe Animation */
+  @keyframes animate {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+      border-radius: 10%;
+      background-color: #00FFFC;
+    }
+  
+    25% {
+      transform: translateY(-100px) scale(1.2);
+      opacity: 0.8;
+      border-radius: 20%;
+      background-color: #9C00FF;
+    }
+  
+    50% {
+      transform: translateY(-200px) scale(1.5);
+      opacity: 0.5;
+      border-radius: 30%;
+      background-color: #FFFC00;
+    }
+  
+    75% {
+      transform: translateY(-100px) scale(1.2);
+      opacity: 0.8;
+      border-radius: 25%;
+      background-color: #9C00FF;
+    }
+  
+    100% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+      border-radius: 10%;
+      background-color: #00FFFC;
+    }
+  }
+  
